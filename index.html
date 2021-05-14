@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Spasora Launch Countdown</title>
+    <meta name="viewport" content="width=960" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="img/favicon.png" rel="shortcut icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <img class="logo" src="img/spasora-logo-white.png" alt="spasora logo" />
+      </nav>
+      <div class="overlay"></div>
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/spasora-bg-vid.mp4" type="video/mp4" />
+          Your browser is not supported!
+        </video>
+      </div>
+      <div class="countdown">
+        <p class="launch"><span class="days">0</span> days to launch</p>
+
+        <p class="subscribe">
+          Subscribe to receive a notification when we launch the app.
+        </p>
+
+        <form class="form">
+          <input
+            type="email"
+            class="email"
+            placeholder="Email address"
+            id="email"
+            required
+          />
+
+          <button class="subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+    </header>
+    <img class="spasora" src="img/spasora-logo-big.png" alt="spasora" />
+
+    <script src="js/countdown.js"></script>
+  </body>
+</html>
