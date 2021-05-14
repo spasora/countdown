@@ -138,6 +138,13 @@ canvas {
 
   .email {
     width: 80%;
-    margin-bottom: 1.3rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 12px;
+  }
+
+  .subscribe-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
