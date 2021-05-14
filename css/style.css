@@ -78,7 +78,7 @@ body {
 .email {
   font-size: 1.5rem;
   font-family: inherit;
-  color: inherit;
+  color: #333333;
   padding: 1rem 1.5rem;
   border-radius: 2px;
   background-color: rbga(#fff, 0.5);
