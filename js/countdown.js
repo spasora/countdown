@@ -5,4 +5,8 @@ const today = new Date();
 const oneDay = 1000 * 60 * 60 * 24;
 const daysLeft = Math.ceil((launchDate.getTime() - today.getTime()) / oneDay);
 
-days.textContent = daysLeft; // TODO: make it change automatically without refreshing the page
+days.textContent = daysLeft;
+
+if ((today.getHours() = 24)) {
+  location.reload();
+}

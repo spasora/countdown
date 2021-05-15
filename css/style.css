@@ -108,7 +108,7 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 2px;
   background-color: #4daaa7;
-  border: 1px solid #4daaa7;
+  border: none;
   font-size: 1.5rem;
   font-family: inherit;
   cursor: pointer;
