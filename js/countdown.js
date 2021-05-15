@@ -13,18 +13,26 @@ formBtn.addEventListener("click", async function (e) {
 
   e.preventDefault();
 
+  document.querySelector(".form").style.display = "none";
+  document.querySelector(".loader-wrapper").style.display = "flex";
+
   await axios
     .post("https://spasora-api.herokuapp.com/api/v1/subscribes", {
       email: formInput,
     })
     .then(function (response) {
       if (response.data.status === "success") {
-        document.querySelector(".form").style.display = "none";
+        document.querySelector(".loader-wrapper").style.display = "none";
         document.querySelector(".thanks").style.display = "block";
       }
     })
     .catch(function (error) {
-      console.log(error);
+      if (error) {
+        document.querySelector(".loader-wrapper").style.display = "none";
+        document.querySelector(".thanks").textContent =
+          "Something went wrong. Please, try again.";
+        document.querySelector(".thanks").style.display = "block";
+      }
     });
 });
 
