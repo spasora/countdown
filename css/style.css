@@ -112,6 +112,7 @@ body {
   font-size: 1.5rem;
   font-family: inherit;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .subscribe-btn:hover {
