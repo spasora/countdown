@@ -59,6 +59,7 @@ body {
 .countdown {
   text-align: center;
   color: #fff;
+  padding: 0 10px;
 }
 
 .launch {
